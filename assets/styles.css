@@ -1,0 +1,23 @@
+body {
+  font-family: "Roboto Thin", sans-serif;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+
+  &:hover, &:active {
+    text-decoration: underline;
+
+  }
+
+  h1 {
+    padding: 0 15px;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    display: block;
+  }
+}
