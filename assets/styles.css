@@ -1,16 +1,45 @@
+:root {
+  --main-text: #333333;
+  --main-hover: #666666;
+  --bg: #e2e1fa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text: #e2e1fa;
+    --main-hover: #cfcdf7;
+    --bg: #010012;
+  }
+}
+
+[data-theme="light"] {
+  --main-text: #333333;
+  --main-hover: #666666;
+  --bg: #e2e1fa;
+}
+
+[data-theme="dark"] {
+  --main-text: #e2e1fa;
+  --main-hover: #cfcdf7;
+  --bg: #010012;
+}
+
+/* page styles */
+
 body {
   font-family: "Roboto Thin", sans-serif;
+  background-color: var(--bg);
 }
 
 #logo {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #333;
+  color: var(--main-text);
 
   &:hover, &:active {
     text-decoration: underline;
-
+    --main-text: var(--main-hover);
   }
 
   h1 {
