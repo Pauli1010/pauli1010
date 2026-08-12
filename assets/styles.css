@@ -32,6 +32,11 @@
   --button-border: 1px solid #b1ccfc;
 }
 
+/* common styles */
+a {
+  color: var(--secondary-text);
+}
+
 /* page styles */
 
 body {
