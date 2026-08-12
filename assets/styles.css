@@ -43,8 +43,11 @@ body {
 header { padding: 20px; }
 
 #logo {
+  position: relative;
   display: flex;
+
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: var(--main-text);
 
@@ -54,11 +57,13 @@ header { padding: 20px; }
   }
 
   h1 {
-    padding: 0 15px;
+    padding: 0;
     font-size: 30px;
     font-weight: 200;
     letter-spacing: 3px;
     display: block;
+    color: transparent;
+    width: 0;
   }
 }
 
