@@ -3,7 +3,7 @@
   --main-hover: #666666;
   --secondary-text: #666666;
   --bg: #e2e1fa;
-
+  --button-border: 1px solid #cfcdf7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,6 +12,7 @@
     --main-hover: #cfcdf7;
     --secondary-text: #b1ccfc;
     --bg: #010012;
+    --button-border: 1px solid #b1ccfc;
   }
 }
 
@@ -20,6 +21,7 @@
   --main-hover: #666666;
   --secondary-text: #666666;
   --bg: #e2e1fa;
+  --button-border: 1px solid #cfcdf7;
 }
 
 [data-theme="dark"] {
@@ -27,6 +29,7 @@
   --main-hover: #cfcdf7;
   --secondary-text: #b1ccfc;
   --bg: #010012;
+  --button-border: 1px solid #b1ccfc;
 }
 
 /* page styles */
@@ -40,7 +43,45 @@ body {
 }
 
 /* header */
-header { padding: 20px; }
+header { position: relative; padding: 20px; }
+.light-dark-mode-box {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+#light-dark-mode {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border: var(--button-border);
+  border-radius: 15px;
+  background-color: #cfcdf7;
+  overflow: hidden;
+
+  .ball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    background-color: #e2e1fa;
+    &.transition {
+      transition-property: left, background-color;
+      transition-duration: 1s, 2s;
+    }
+  }
+
+  &.dark .ball {
+    position: absolute;
+    left: 30px;
+    background-color: #010012;
+  }
+}
 
 #logo {
   position: relative;
@@ -52,7 +93,6 @@ header { padding: 20px; }
   color: var(--main-text);
 
   &:hover, &:active {
-    text-decoration: underline;
     --main-text: var(--main-hover);
   }
 
