@@ -1,9 +1,10 @@
 :root {
-  --main-text: #333333;
+  --main-text: #010012;
   --main-hover: #666666;
   --secondary-text: #666666;
   --bg: #e2e1fa;
   --button-border: 1px solid #cfcdf7;
+  --icon: #010012;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,15 +14,17 @@
     --secondary-text: #b1ccfc;
     --bg: #010012;
     --button-border: 1px solid #b1ccfc;
+    --icon: #b1ccfc;
   }
 }
 
 [data-theme="light"] {
-  --main-text: #333333;
+  --main-text: #010012;
   --main-hover: #666666;
   --secondary-text: #666666;
   --bg: #e2e1fa;
   --button-border: 1px solid #cfcdf7;
+  --icon: #010012;
 }
 
 [data-theme="dark"] {
@@ -30,11 +33,23 @@
   --secondary-text: #b1ccfc;
   --bg: #010012;
   --button-border: 1px solid #b1ccfc;
+  --icon: #b1ccfc;
 }
 
 /* common styles */
-a {
-  color: var(--secondary-text);
+* { box-sizing: border-box; }
+
+a { color: var(--secondary-text); }
+
+.icons {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+  padding: 5px 0;
+
+  .icon {
+    width: auto;
+  }
 }
 
 /* page styles */
