@@ -137,7 +137,7 @@ section {
   margin: auto;
 }
 
-/*.projects-section { display: none; !* waiting for more data *!}*/
+.projects-section { display: none; /* waiting for more data */}
 
 h2 {
   font-weight: 300;

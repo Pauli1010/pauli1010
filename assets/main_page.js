@@ -21,7 +21,6 @@ function getRandomElements(array, count) {
 }
 
 function fillProjectsData() {
-  // return // waiting for more data
   if (projects_data.length <= 0) return;
 
   const projects = document.getElementById("projects");
@@ -56,4 +55,4 @@ function fillProjectsData() {
 }
 
 fillBioData();
-fillProjectsData();
+// fillProjectsData(); //bring back after more projects are added
