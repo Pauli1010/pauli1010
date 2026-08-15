@@ -32,8 +32,8 @@ function fillProjectsData() {
   });
 
   const template = Handlebars.compile(`
-    <a href="" class="project">
-      <h3>{{name}}</h3>
+    <a href="{{url}}" target="_blank" class="project">
+      <h3><span>{{name}}</span></h3>
       <div class="image-box">
         {{#if image}}<img id="{{image}}"/>{{/if}}
       </div>

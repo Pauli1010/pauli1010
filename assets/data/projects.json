@@ -3,12 +3,12 @@
     "name": "Pantry Master",
     "lead": "Mockup of a search engine for recipes, based on the provided list of ingredients",
     "github_url": "https://github.com/Pauli1010/pantry_master",
-    "url": "",
+    "url": "/",
     "description": "",
     "image": "pantry_master.png",
     "technologies": [
-      "Ruby 3.4.9",
-      "Ruby on Rails 8.1",
+      "Ruby",
+      "Ruby on Rails",
       "PostgreSQL",
       "pg_search",
       "pg_trigram",
@@ -16,6 +16,52 @@
       "Hotwire Turbo",
       "Tailwind",
       "MiniTest"
+    ]
+  },
+  {
+    "name": "Konsultujemy - Gdynia",
+    "lead": "Decidim based Participatory Platform for Gdynia",
+    "github_url": "https://github.com/codeshine-com/decidim-gdynia",
+    "url": "https://konsultujemy.gdynia.pl",
+    "description": "",
+    "image": "konsultujemy_gdynia.jpg",
+    "technologies": [
+      "Decidim",
+      "Ruby",
+      "Ruby on Rails",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Konsultacje Społeczne - Warszawa",
+    "lead": "Decidim based Participatory Platform for Warsaw",
+    "github_url": "https://github.com/City-of-Warsaw/decidim-warsaw-ks",
+    "url": "https://konsultacje.um.warszawa.pl/",
+    "description": "",
+    "image": "konsultacje_spoleczne_warszawa.jpg",
+    "technologies": [
+      "Decidim",
+      "Ruby",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "MiniTest",
+      "Rspec"
+    ]
+  },
+  {
+    "name": "Budżet obywatelski - Warszawa",
+    "lead": "Decidim based Citizen's Budget Platform for Warsaw",
+    "github_url": "https://github.com/City-of-Warsaw/decidim-warsaw-bo",
+    "url": "https://bo.um.warszawa.pl/",
+    "description": "",
+    "image": "budzet_obywatelski_warszawa.jpg",
+    "technologies": [
+      "Decidim",
+      "Ruby",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "MiniTest",
+      "Rspec"
     ]
   }
 ]
