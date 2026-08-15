@@ -5,7 +5,9 @@ import projects_data from "./data/projects.json" with { type: "json" };
 function fillBioData() {
   const about_me = document.getElementById("about_me");
   const parser = new DOMParser();
-  let about_me_content = parser.parseFromString(data["bio"], 'text/html');
+  let paragraphed = data["bio"] instanceof Array ? data["bio"].map((el) => `<p>${el}</p>`).join('') : data["bio"]
+  let about_me_content = parser.parseFromString(paragraphed, 'text/html');
+
   about_me.append(...about_me_content.body.childNodes)
 }
 
